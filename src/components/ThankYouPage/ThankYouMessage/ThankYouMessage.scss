@@ -1,0 +1,93 @@
+.ThankYouMessage {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  font-display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .message {
+    position: absolute;
+    width: 461px;
+    height: 168px;
+    left: 400px;
+    top: 200px;
+    z-index: 10;
+
+    h1 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 84px;
+      color: #ffffff;
+    }
+  }
+  .pictureWrapperFilter {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../../images/thanks.png");
+    filter: brightness(40%);
+  }
+
+  .vegetablesOne {
+    position: absolute;
+    top: 70px;
+    right: 250px;
+    width: 65px;
+    height: 60px;
+    z-index: -1;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .vegetables {
+    position: absolute;
+    top: 200px;
+    right: 250px;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .carrot {
+    position: absolute;
+    bottom: 300px;
+    left: 120px;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .cheese {
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+    width: 60px;
+    height: 60px;
+    z-index: -1;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

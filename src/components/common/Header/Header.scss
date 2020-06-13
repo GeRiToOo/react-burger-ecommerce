@@ -1,0 +1,43 @@
+$orange: #ffc700;
+$headingsColor: #393939;
+* {
+  box-sizing: border-box;
+}
+
+.Header {
+  font-family: Roboto;
+  height: 500px;
+  background-image: url("../../images/front.png");
+  background-size: cover;
+  display: flex;
+  position: relative;
+
+  .header_wrapper {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 60%;
+    max-width: 60%;
+
+    .content {
+      margin-top: 100px;
+      color: white;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      width: 500px;
+
+      .button {
+        button {
+          width: 173px;
+          height: 38px;
+          background: none;
+          color: white;
+          border: 2px solid $orange;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

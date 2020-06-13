@@ -1,0 +1,148 @@
+$orange: #ffc700;
+
+.addToBucket {
+  width: 100%;
+  height: 670px;
+  position: relative;
+
+  .description {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+
+    .content {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 80%;
+      height: 320px;
+
+      .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 122px;
+        height: 34px;
+        background-color: $orange;
+        color: white;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: lowercase;
+      }
+
+      .time {
+        width: 120px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+
+        p {
+          margin-left: 5px;
+          color: $orange;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .moreInfo {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+
+        .servings {
+          width: 120px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+
+          p {
+            margin-left: 5px;
+            color: $orange;
+          }
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .cals {
+          width: 170px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+
+          p {
+            margin-left: 5px;
+            color: $orange;
+          }
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+      p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: lowercase;
+
+        color: #4b4a4a;
+      }
+
+      button {
+        width: 173px;
+        height: 38px;
+        background: #ffc700;
+        border: 2px solid #ffc700;
+        box-sizing: border-box;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #000000;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .picture {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .image_wrapper {
+      height: 500px;
+      width: 100%;
+      img {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

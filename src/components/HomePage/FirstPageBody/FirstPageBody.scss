@@ -1,0 +1,135 @@
+.FirstPageBody {
+  display: flex;
+  min-height: 400px;
+
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+
+    .first,
+    .second,
+    .third {
+      width: 100%;
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        width: 480px;
+        height: 200px;
+        h2 {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 55px;
+          line-height: 20px;
+          color: #393939;
+        }
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 22px;
+          line-height: 27px;
+
+          color: #595959;
+        }
+      }
+    }
+
+    .spaghetti {
+      position: absolute;
+      top: 20px;
+      right: 120px;
+      width: 70px;
+      height: 70px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .groceries {
+      position: absolute;
+      top: 320px;
+      left: 100px;
+      width: 50px;
+      height: 50px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .juice {
+      position: absolute;
+      top: 420px;
+      right: 120px;
+      width: 60px;
+      height: 60px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .cheese {
+      position: absolute;
+      bottom: 390px;
+      left: 120px;
+      width: 60px;
+      height: 60px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .vegetables {
+      position: absolute;
+      bottom: 280px;
+      right: 120px;
+      width: 55px;
+      height: 50px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .carrot {
+      position: absolute;
+      bottom: 20px;
+      left: 80px;
+      width: 60px;
+      height: 60px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .pictures {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+
+    .firstImage,
+    .secondImage,
+    .thirdImage {
+      width: 100%;
+      height: 380px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+$orange: #ffc700;
+
+* {
+  box-sizing: border-box;
+}
+
+.Footer {
+  font-family: Roboto;
+  height: 420px;
+  background-image: url("../../images/footer.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+
+  .content {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    ul {
+      list-style: none;
+      li {
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 25px;
+        cursor: pointer;
+        h2 {
+          color: $orange;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 31px;
+        }
+        img {
+          width: 160px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}

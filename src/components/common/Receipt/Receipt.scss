@@ -1,0 +1,146 @@
+$orange: #ffc700;
+
+.Receipt {
+  width: 100%;
+  height: 300px;
+  font-family: Roboto;
+  height: 700px;
+  background-image: url("../../images/receip.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .content {
+    position: absolute;
+    right: 20px;
+    width: 50%;
+    height: 100%;
+
+    .title {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 25%;
+      border-bottom: 1px solid #e8e8e8;
+
+      .titleContent {
+        position: absolute;
+        left: 70px;
+        top: 50px;
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 21px;
+          letter-spacing: 0.1em;
+          text-transform: lowercase;
+          color: #ffffff;
+        }
+        .ingredients {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 120px;
+          height: 30px;
+          background-color: $orange;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .ingredientsList {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    width: 100%;
+    height: 70%;
+    display: flex;
+
+    .columnOne {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100px;
+      li {
+        padding: 5px;
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 0.1em;
+        font-feature-settings: "pnum" on, "lnum" on;
+
+        color: #dddddd;
+      }
+    }
+    .columnTwo {
+      list-style: none;
+      margin: 0;
+
+      li {
+        padding: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.1em;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #ffffff;
+      }
+    }
+  }
+  .cheese {
+    position: absolute;
+    top: 40px;
+    right: 120px;
+    width: 60px;
+    height: 60px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .vegetables {
+    position: absolute;
+    top: 280px;
+    right: 160px;
+    width: 60px;
+    height: 60px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .cheeseTwo {
+    position: absolute;
+    bottom: 120px;
+    right: 100px;
+    width: 60px;
+    height: 60px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .carrot {
+    position: absolute;
+    bottom: 40px;
+    right: 500px;
+    width: 66px;
+    height: 66px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

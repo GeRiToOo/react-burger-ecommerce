@@ -1,0 +1,79 @@
+$orange: #ffc700;
+
+.NavigationBar {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  nav {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    color: white;
+
+    .nav_list {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-self: flex-start;
+
+      li {
+        margin: 15px;
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+
+        position: relative;
+        color: white;
+        text-decoration: none;
+        padding: 5px 0;
+        transition: 0.2s;
+
+        &:hover {
+          color: $orange;
+          cursor: pointer;
+        }
+
+        &:before {
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 100%;
+          background: $orange;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.4s linear;
+        }
+
+        &:hover:before {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+    .shoppingCartButton {
+      display: flex;
+      margin: 20px;
+
+      button {
+        width: 33px;
+        height: 21px;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

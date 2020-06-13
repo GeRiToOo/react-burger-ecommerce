@@ -1,0 +1,10 @@
+$orange: #ffc700;
+
+.Sandwiches {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 95%;
+}
