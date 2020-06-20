@@ -27,7 +27,6 @@ $orange: #ffc700;
         font-weight: 500;
         font-size: 15px;
         line-height: 21px;
-
         position: relative;
         color: white;
         text-decoration: none;
@@ -35,8 +34,12 @@ $orange: #ffc700;
         transition: 0.2s;
 
         &:hover {
-          color: $orange;
+
           cursor: pointer;
+        }
+
+        &:focus {
+          outline: 0;
         }
 
         &:before {
@@ -48,13 +51,23 @@ $orange: #ffc700;
           width: 100%;
           background: $orange;
           transform: scaleX(0);
-          transform-origin: right;
-          transition: transform 0.4s linear;
+
         }
 
         &:hover:before {
           transform: scaleX(1);
           transform-origin: left;
+        }
+
+        &.active:before {
+          position: absolute;
+          display: block;
+          content: "";
+          left: 0;
+          height: 2px;
+          width: 100%;
+          background: $orange;
+          transform: initial;
         }
       }
 
@@ -66,7 +79,6 @@ $orange: #ffc700;
         font-weight: 500;
         font-size: 15px;
         line-height: 21px;
-
         position: relative;
         color: white;
         text-decoration: none;
@@ -74,7 +86,7 @@ $orange: #ffc700;
         transition: 0.2s;
 
         &:hover {
-          color: $orange;
+
           cursor: pointer;
         }
 
@@ -87,8 +99,7 @@ $orange: #ffc700;
           width: 100%;
           background: $orange;
           transform: scaleX(0);
-          transform-origin: right;
-          transition: transform 0.4s linear;
+
         }
 
         &:hover:before {
@@ -99,12 +110,18 @@ $orange: #ffc700;
     }
 
     .shoppingCartButton {
+      position: relative;
       display: flex;
-      margin: 20px;
+      width: 45px;
+      height: 30px;
+      margin: 10px;
 
-      button {
-        width: 33px;
-        height: 21px;
+      a {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 23px;
         border: none;
         background: none;
         cursor: pointer;
@@ -113,6 +130,32 @@ $orange: #ffc700;
           display: block;
           width: 100%;
           height: 100%;
+        }
+      }
+
+      .quantity {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 21px;
+        height: 21px;
+        background: #FFC700;
+        border: 1.5px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 50%;
+
+        p {
+          margin: 0;
+          padding: 0;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 21px;
+          text-transform: lowercase;
+          color: #000000;
         }
       }
     }

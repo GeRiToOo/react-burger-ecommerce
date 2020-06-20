@@ -1,9 +1,9 @@
 import React from "react";
-import "./Receipt.scss";
+import "./Recipe.scss";
 
-const Receipt = () => {
+const Recipe = ({ recipe }) => {
   return (
-    <div className="Receipt">
+    <div className="Recipe">
       <div className="content">
         <div className="title">
           <div className="titleContent">
@@ -12,23 +12,15 @@ const Receipt = () => {
           </div>
         </div>
         <div className="ingredientsList">
-          <ul className="columnOne">
-            <li>10 oz</li>
-            <li>10 oz</li>
-            <li>10 oz</li>
-            <li>10 oz</li>
-            <li>10 oz</li>
-            <li>10 oz</li>
-            <li>10 oz</li>
-          </ul>
-          <ul className="columnTwo">
-            <li>Ground beef</li>
-            <li>Ground beef</li>
-            <li>Ground beef</li>
-            <li>Ground beef</li>
-            <li>Ground beef</li>
-            <li>Ground beef</li>
-            <li>Ground beef</li>
+          <ul className="list">
+            {recipe !== null
+              ? recipe.ingredients.map((ingredient, index) => (
+                  <li key={index}>
+                    <div className="quantity">{ingredient.quantity}</div>
+                    <div className="name">{ingredient.name}</div>
+                  </li>
+                ))
+              : null}
           </ul>
         </div>
       </div>
@@ -48,4 +40,4 @@ const Receipt = () => {
   );
 };
 
-export default Receipt;
+export default Recipe;

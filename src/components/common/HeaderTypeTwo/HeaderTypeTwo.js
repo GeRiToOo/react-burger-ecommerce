@@ -3,10 +3,10 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 
 import "./HeaderTypeTwo.scss";
 
-const HeaderTypeTwo = () => {
+const HeaderTypeTwo = ({ cart }) => {
   return (
     <div className="HeaderTypeTwo">
-      <NavigationBar />
+      <NavigationBar cart={cart} />
     </div>
   );
 };

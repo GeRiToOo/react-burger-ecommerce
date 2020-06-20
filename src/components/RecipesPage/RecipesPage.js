@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../common/Header/Header";
 import RecipesPageContent from "./RecipesPageContent/RecipesPageContent";
 import Footer from "../common/Footer/Footer";
+import "./RecipesPage.scss";
 
-const RecipesPage = ({ recipes }) => {
+const RecipesPage = ({ resetAllState, seeMore, cart, recipes }) => {
+  useEffect(() => {
+    resetAllState();
+  }, []);
   return (
     <div className="RecipesPage">
-      <Header />
-      <RecipesPageContent recipes={recipes} />
+      <Header cart={cart} />
+      <RecipesPageContent seeMore={seeMore} recipes={recipes} />
       <Footer />
     </div>
   );

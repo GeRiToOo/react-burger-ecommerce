@@ -1,25 +1,20 @@
 import React from "react";
-import "./Items.scss";
+import "./Item.scss";
 
-const Items = ({ receipt, onClickSandwichItem }) => {
+const Items = ({ recipe }) => {
   return (
-    <div
-      className="sandwich"
-      onClick={() => {
-        onClickSandwichItem(receipt);
-      }}
-    >
+    <div className="sandwich">
       <div className="imageWrapper">
-        <img src={require(`../../../../images/${receipt.image}`)} alt="" />
+        <img src={require(`../../../../images/${recipe.image}`)} alt="" />
       </div>
       <div className="special">
-        <p>{receipt.specialty}</p>
+        <p>{recipe.specialty}</p>
       </div>
       <div className="description">
-        <p>{receipt.description}</p>
+        <p>{recipe.description}</p>
         <div className="time">
           <img src={require("../../../../images/clock.png")} alt="" />
-          <p>{receipt.readyInMinutes} minutes</p>
+          <p>{recipe.readyInMinutes} minutes</p>
         </div>
       </div>
     </div>

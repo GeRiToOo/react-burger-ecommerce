@@ -1,6 +1,6 @@
 $orange: #ffc700;
 
-.Receipt {
+.Recipe {
   width: 100%;
   height: 300px;
   font-family: Roboto;
@@ -27,8 +27,9 @@ $orange: #ffc700;
 
       .titleContent {
         position: absolute;
-        left: 70px;
+        left: 30px;
         top: 50px;
+
         p {
           font-family: Roboto;
           font-style: normal;
@@ -39,6 +40,7 @@ $orange: #ffc700;
           text-transform: lowercase;
           color: #ffffff;
         }
+
         .ingredients {
           display: flex;
           justify-content: center;
@@ -55,88 +57,102 @@ $orange: #ffc700;
   .ingredientsList {
     position: absolute;
     bottom: 0;
-    left: 70px;
+    left: 30px;
     width: 100%;
     height: 70%;
-    display: flex;
 
-    .columnOne {
+    .list {
       list-style: none;
-      margin: 0;
       padding: 0;
-      width: 100px;
-      li {
-        padding: 5px;
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 21px;
-        letter-spacing: 0.1em;
-        font-feature-settings: "pnum" on, "lnum" on;
-
-        color: #dddddd;
-      }
-    }
-    .columnTwo {
-      list-style: none;
-      margin: 0;
 
       li {
-        padding: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: 0.1em;
-        font-feature-settings: "pnum" on, "lnum" on;
-        color: #ffffff;
+        display: flex;
+        width: 100%;
+        height: 40px;
+
+        .quantity {
+          width: 30%;
+          height: 100%;
+          font-family: Roboto;
+          font-style: italic;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: 0.1em;
+          font-feature-settings: "pnum"on,
+            "lnum"on;
+          color: #dddddd;
+        }
+
+        .name {
+          width: 70%;
+          height: 100%;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21px;
+          letter-spacing: 0.1em;
+          font-feature-settings: 'pnum'on, 'lnum'on;
+          color: #FFFFFF;
+        }
       }
     }
+
   }
+
   .cheese {
     position: absolute;
     top: 40px;
     right: 120px;
     width: 60px;
     height: 60px;
+    opacity: 0.5;
+
     img {
       display: block;
       width: 100%;
       height: 100%;
     }
   }
+
   .vegetables {
     position: absolute;
     top: 280px;
     right: 160px;
     width: 60px;
     height: 60px;
+    opacity: 0.5;
+
     img {
       display: block;
       width: 100%;
       height: 100%;
     }
   }
+
   .cheeseTwo {
     position: absolute;
     bottom: 120px;
     right: 100px;
     width: 60px;
     height: 60px;
+    opacity: 0.5;
+
     img {
       display: block;
       width: 100%;
       height: 100%;
     }
   }
+
   .carrot {
     position: absolute;
     bottom: 40px;
     right: 500px;
     width: 66px;
     height: 66px;
+    opacity: 0.5;
+
     img {
       display: block;
       width: 100%;

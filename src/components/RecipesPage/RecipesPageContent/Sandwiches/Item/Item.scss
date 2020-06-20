@@ -1,7 +1,11 @@
 $orange: #ffc700;
 
+a {
+  text-decoration: none;
+}
+
 .sandwich {
-  margin-top: 20px;
+  margin-top: 60px;
   width: 350px;
   height: 360px;
   -webkit-box-shadow: 5px 10px 10px 10px #777;
@@ -10,6 +14,12 @@ $orange: #ffc700;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
+
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+
+  }
 
   .imageWrapper {
     width: 100%;
@@ -22,6 +32,7 @@ $orange: #ffc700;
       border-radius: 5px;
     }
   }
+
   .special {
     position: relative;
     display: flex;
@@ -33,7 +44,10 @@ $orange: #ffc700;
     height: 30px;
     background-color: $orange;
     color: white;
+
+
   }
+
   .description {
     margin-left: 20px;
     display: flex;
@@ -53,6 +67,7 @@ $orange: #ffc700;
       text-transform: lowercase;
       color: #4b4a4a;
     }
+
     .time {
       display: flex;
       justify-content: space-between;
@@ -64,6 +79,7 @@ $orange: #ffc700;
         width: 17px;
         height: 17px;
       }
+
       p {
         margin: 0;
         padding: 0;

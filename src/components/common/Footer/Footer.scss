@@ -5,6 +5,10 @@ $orange: #ffc700;
 }
 
 .Footer {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 100%;
   font-family: Roboto;
   height: 420px;
   background-image: url("../../images/footer.png");
@@ -19,8 +23,10 @@ $orange: #ffc700;
     height: 70%;
     display: flex;
     justify-content: space-between;
+
     ul {
       list-style: none;
+
       li {
         color: white;
         margin: 0;
@@ -31,6 +37,7 @@ $orange: #ffc700;
         font-size: 12px;
         line-height: 25px;
         cursor: pointer;
+
         h2 {
           color: $orange;
           font-family: Roboto;
@@ -39,6 +46,7 @@ $orange: #ffc700;
           font-size: 22px;
           line-height: 31px;
         }
+
         img {
           width: 160px;
           height: 30px;

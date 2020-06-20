@@ -1,4 +1,5 @@
 $orange: #ffc700;
+
 * {
   box-sizing: border-box;
 }
@@ -61,6 +62,30 @@ $orange: #ffc700;
       border: 2px solid $orange;
       text-transform: uppercase;
       cursor: pointer;
+
+      a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      &:hover {
+        background-color: #ffc9052d;
+        transform: scale(1.08, 1.08);
+      }
+
+      &:active {
+        transform: scale(1.08, 1.08);
+      }
+
+      &:focus {
+        outline: 0;
+      }
     }
   }
 }

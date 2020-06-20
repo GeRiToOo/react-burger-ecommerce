@@ -1,16 +1,17 @@
 $orange: #ffc700;
 $headingsColor: #393939;
+
 * {
   box-sizing: border-box;
 }
 
 .Header {
+  position: relative;
   font-family: Roboto;
   height: 500px;
   background-image: url("../../images/front.png");
   background-size: cover;
   display: flex;
-  position: relative;
 
   .header_wrapper {
     position: absolute;
@@ -36,6 +37,29 @@ $headingsColor: #393939;
           border: 2px solid $orange;
           text-transform: uppercase;
           cursor: pointer;
+
+          a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:focus {
+              outline: 0;
+            }
+          }
+
+          &:hover {
+            background-color: #ffc9052d;
+          }
+
+          &:active {
+            transform: scale(1.08, 1.08);
+          }
+
+          &:focus {
+            outline: 0;
+          }
         }
       }
     }

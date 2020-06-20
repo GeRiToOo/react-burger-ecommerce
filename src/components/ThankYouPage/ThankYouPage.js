@@ -3,10 +3,10 @@ import HeaderTypeTwo from "../common/HeaderTypeTwo/HeaderTypeTwo";
 import ThankYouMessage from "./ThankYouMessage/ThankYouMessage";
 import Footer from "../common/Footer/Footer";
 
-const ThankYouPage = () => {
+const ThankYouPage = ({ cart }) => {
   return (
     <div className="ThankYouPage">
-      <HeaderTypeTwo />
+      <HeaderTypeTwo cart={cart} />
       <ThankYouMessage />
       <Footer />
     </div>

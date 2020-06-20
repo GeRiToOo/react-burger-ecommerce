@@ -1,0 +1,251 @@
+.cartEmpty {
+    position: relative;
+    // background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .message {
+        position: absolute;
+        width: 461px;
+        height: 168px;
+        left: 450px;
+        top: 200px;
+        z-index: 10;
+
+        h1 {
+            font-family: Roboto;
+            text-align: center;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 84px;
+            color: white;
+        }
+    }
+
+    .pictureWrapperFilter {
+        position: absolute;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-image: url("../../../images/thanks.png");
+        filter: brightness(40%);
+    }
+
+    .cheeseOne {
+        position: absolute;
+        top: 20px;
+        left: 320px;
+        width: 65px;
+        height: 60px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .vegetables {
+        position: absolute;
+        bottom: 250px;
+        right: 200px;
+        width: 55px;
+        height: 50px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .cheese {
+        position: absolute;
+        bottom: 150px;
+        left: 350px;
+        width: 60px;
+        height: 60px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .carrot {
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        width: 60px;
+        height: 60px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .cheeseTwo {
+        position: absolute;
+        top: 200px;
+        right: 320px;
+        width: 65px;
+        height: 60px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .vegetablesTwo {
+        position: absolute;
+        bottom: 500px;
+        left: 200px;
+        width: 55px;
+        height: 50px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .cheeseThree {
+        position: absolute;
+        bottom: 50px;
+        left: 100px;
+        width: 60px;
+        height: 60px;
+        z-index: -1;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .carrotTwo {
+        position: absolute;
+        bottom: 20px;
+        right: 180px;
+        width: 60px;
+        height: 60px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+
+// .cartEmpty {
+//     // position: absolute;
+//     width: 100%;
+//     height: 700px;
+//     font-display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     .message {
+//         position: absolute;
+//         width: 461px;
+//         height: 168px;
+//         left: 400px;
+//         top: 200px;
+//         z-index: 10;
+
+//         h1 {
+//             font-family: Roboto;
+//             font-style: normal;
+//             font-weight: bold;
+//             font-size: 72px;
+//             line-height: 84px;
+//             color: #ffffff;
+//         }
+//     }
+
+//     .pictureWrapperFilter {
+//         position: absolute;
+//         top: 100px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         height: 500px;
+//         width: 100%;
+//         background-size: cover;
+//         background-image: url(`../../../../../images/thanks.png);
+//         filter: brightness(40%);
+//     }
+// .cheeseOne {
+//     position: absolute;
+//     top: 20px;
+//     left: 320px;
+//     width: 65px;
+//     height: 60px;
+
+//     img {
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+
+// .vegetables {
+//     position: absolute;
+//     bottom: 350px;
+//     left: 500px;
+//     width: 55px;
+//     height: 50px;
+
+//     img {
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+
+// .cheese {
+//     position: absolute;
+//     bottom: 150px;
+//     left: 350px;
+//     width: 60px;
+//     height: 60px;
+
+//     img {
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+
+// .carrot {
+//     position: absolute;
+//     top: 20px;
+//     right: 80px;
+//     width: 60px;
+//     height: 60px;
+
+//     img {
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+// }
