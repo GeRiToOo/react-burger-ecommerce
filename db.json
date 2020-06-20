@@ -1,50 +1,6 @@
 {
   "cart": [],
-  "orders": [
-    {
-      "user": {
-        "title": "Miss",
-        "firstName": "Atanas",
-        "lastName": "Rangelov",
-        "email": "djidjister@gmail.com",
-        "password": "12345",
-        "mobileNumber": "07931722903",
-        "postCode": "125A STATION ROAD"
-      },
-      "cart": [
-        {
-          "productId": 4,
-          "quantity": 16,
-          "id": 2
-        }
-      ],
-      "id": 1
-    },
-    {
-      "user": {
-        "title": "Miss",
-        "firstName": "Atanas",
-        "lastName": "Rangelov",
-        "email": "djidjister@gmail.com",
-        "password": "1234",
-        "mobileNumber": "088798787",
-        "postCode": "125A STATION ROAD"
-      },
-      "cart": [
-        {
-          "productId": 6,
-          "quantity": 1,
-          "id": 1
-        },
-        {
-          "productId": 4,
-          "quantity": 3,
-          "id": 2
-        }
-      ],
-      "id": 2
-    }
-  ],
+  "orders": [],
   "recipes": [
     {
       "id": 1,
